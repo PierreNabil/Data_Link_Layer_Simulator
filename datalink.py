@@ -8,7 +8,6 @@ class DataLinkLayer:
 		self.next_frame_to_send = 0
 		self.ack_expected = 0
 		self.frame_expected = 0
-		self.r = None
 		self.buffer = [None]*(MAX_SEQ+1)
 		self.n_buffered = 0
 
