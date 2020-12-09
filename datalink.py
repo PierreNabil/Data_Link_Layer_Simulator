@@ -2,8 +2,8 @@ from protocol import *
 
 
 class DataLinkLayer:
-	def __init__(self, ID, network_layer_data, timer_max_wait=3):
-		self.ID = ID
+	def __init__(self, comp_id, network_layer_data, timer_max_wait=3):
+		self.ID = comp_id
 
 		self.next_frame_to_send = 0
 		self.ack_expected = 0
@@ -11,7 +11,6 @@ class DataLinkLayer:
 		self.r = None
 		self.buffer = [None]*(MAX_SEQ+1)
 		self.n_buffered = 0
-		self.event = None
 
 		self.time_stamps = [] #[(t1, seq1), (t2, seq2), ...]
 		self.timer_frame_no = None
@@ -20,7 +19,7 @@ class DataLinkLayer:
 
 		self.network_layer_data_to_send = network_layer_data #[(t1,packet1), (t2,packet2), ...]
 		self.network_layer_data_received = []
-		self.network_layer_is_enabled = True
+		self._enable_network_layer()
 
 	def _start_timer(self, seq, t):
 		self.time_stamps.append((t, seq))
@@ -71,7 +70,7 @@ class DataLinkLayer:
 		self.network_layer_is_enabled = False
 
 	def _is_network_layer_ready(self, t):
-		if self.network_layer_data_to_send:
+		if self.network_layer_is_enabled and self.network_layer_data_to_send:
 			if t >= self.network_layer_data_to_send[0][0]:
 				return True
 		return False
@@ -96,7 +95,7 @@ class DataLinkLayer:
 			s = self._send_data(self.next_frame_to_send, self.frame_expected, self.buffer, t)
 			self.next_frame_to_send = inc(self.next_frame_to_send)
 			self.timer_i += 1
-			if self.timer_i > self.n_buffered+1:
+			if self.timer_i >= self.n_buffered:
 				self.timer_i = None
 
 		elif EventType.network_layer_ready in events:
