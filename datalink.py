@@ -14,7 +14,7 @@ class DataLinkLayer:
 
 		self.time_stamps = [] #[(t1, seq1), (t2, seq2), ...]
 		self.timer_frame_no = None
-		self.timer_max_wait = timer_max_wait
+		self.timer_max_wait = 2 * timer_max_wait - 1
 		self.timer_i = None
 
 		self.network_layer_data_to_send = network_layer_data #[(t1,packet1), (t2,packet2), ...]
@@ -95,7 +95,7 @@ class DataLinkLayer:
 			s = self._send_data(self.next_frame_to_send, self.frame_expected, self.buffer, t)
 			self.next_frame_to_send = inc(self.next_frame_to_send)
 			self.timer_i += 1
-			if self.timer_i >= self.n_buffered:
+			if self.timer_i > self.n_buffered:
 				self.timer_i = None
 
 		elif EventType.network_layer_ready in events:
@@ -126,8 +126,12 @@ class DataLinkLayer:
 		else:
 			self._disable_network_layer()
 
-		# if self.time_stamp:
-		# 	self.time_stamp += 1
-		if s:
-			print('@t=', t, '\t: C' + str(self.ID) + ' Sent:    ', s)
+		if s is not None or self.next_frame_to_send != []:
+			print('@t={:02d}: C{} Sent: {}'.format(t, self.ID, s))
+		return s
+
+	def get_data_received(self):
+		s = ''
+		for ti, pi in self.network_layer_data_received:
+			s += str(pi)
 		return s
