@@ -1,0 +1,1000 @@
+0
+[(0, 'e'), (0, 'l'), (0, 'l'), (0, 'o'), (0, ' '), (0, 'W'), (0, 'o'), (0, 'r'), (0, 'l'), (0, 'd'), (0, '!'), (35, ' '), (35, 'H'), (35, 'A'), (35, 'H'), (35, 'A')]
+''
+[EventType.network_layer_ready]
+['H', None, None, None, None, None, None, None]
+1
+1
+False
+Frame(FrameKind.data,0,7,"'H'")
+
+1
+[(0, 'e'), (0, 'l'), (0, 'c'), (0, 'o'), (0, 'm'), (0, 'e'), (0, ' '), (40, 't'), (40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'H'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['W', None, None, None, None, None, None, None]
+1
+1
+False
+Frame(FrameKind.data,0,0,"'W'")
+
+2
+[(0, 'l'), (0, 'l'), (0, 'o'), (0, ' '), (0, 'W'), (0, 'o'), (0, 'r'), (0, 'l'), (0, 'd'), (0, '!'), (35, ' '), (35, 'H'), (35, 'A'), (35, 'H'), (35, 'A')]
+'W'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['H', 'e', None, None, None, None, None, None]
+1
+2
+True
+Frame(FrameKind.err,1,0,"'e'")
+
+3
+[(0, 'l'), (0, 'c'), (0, 'o'), (0, 'm'), (0, 'e'), (0, ' '), (40, 't'), (40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'H'
+[EventType.checksum_error, EventType.network_layer_ready]
+['W', 'e', None, None, None, None, None, None]
+2
+2
+False
+Frame(FrameKind.data,1,0,"'e'")
+
+4
+[(0, 'l'), (0, 'o'), (0, ' '), (0, 'W'), (0, 'o'), (0, 'r'), (0, 'l'), (0, 'd'), (0, '!'), (35, ' '), (35, 'H'), (35, 'A'), (35, 'H'), (35, 'A')]
+'We'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['H', 'e', 'l', None, None, None, None, None]
+2
+3
+False
+Frame(FrameKind.data,2,1,"'l'")
+
+5
+[(0, 'c'), (0, 'o'), (0, 'm'), (0, 'e'), (0, ' '), (40, 't'), (40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'H'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['W', 'e', 'l', None, None, None, None, None]
+1
+3
+True
+Frame(FrameKind.err,2,0,"'l'")
+
+6
+[(0, 'o'), (0, ' '), (0, 'W'), (0, 'o'), (0, 'r'), (0, 'l'), (0, 'd'), (0, '!'), (35, ' '), (35, 'H'), (35, 'A'), (35, 'H'), (35, 'A')]
+'We'
+[EventType.checksum_error, EventType.network_layer_ready]
+['H', 'e', 'l', 'l', None, None, None, None]
+3
+4
+False
+Frame(FrameKind.data,3,1,"'l'")
+
+7
+[(0, 'o'), (0, 'm'), (0, 'e'), (0, ' '), (40, 't'), (40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'H'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['W', 'e', 'l', 'c', None, None, None, None]
+2
+4
+False
+Frame(FrameKind.data,3,0,"'c'")
+
+8
+[(0, 'o'), (0, ' '), (0, 'W'), (0, 'o'), (0, 'r'), (0, 'l'), (0, 'd'), (0, '!'), (35, ' '), (35, 'H'), (35, 'A'), (35, 'H'), (35, 'A')]
+'We'
+[EventType.frame_arrival, EventType.timeout]
+['H', 'e', 'l', 'l', None, None, None, None]
+3
+2
+False
+Frame(FrameKind.data,1,1,"'e'")
+
+9
+[(0, 'm'), (0, 'e'), (0, ' '), (40, 't'), (40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'He'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['W', 'e', 'l', 'c', 'o', None, None, None]
+3
+5
+False
+Frame(FrameKind.data,4,1,"'o'")
+
+10
+[(0, 'o'), (0, ' '), (0, 'W'), (0, 'o'), (0, 'r'), (0, 'l'), (0, 'd'), (0, '!'), (35, ' '), (35, 'H'), (35, 'A'), (35, 'H'), (35, 'A')]
+'We'
+[EventType.frame_arrival, EventType.timeout]
+['H', 'e', 'l', 'l', None, None, None, None]
+2
+3
+False
+Frame(FrameKind.data,2,1,"'l'")
+
+11
+[(0, 'm'), (0, 'e'), (0, ' '), (40, 't'), (40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hel'
+[EventType.frame_arrival, EventType.timeout]
+['W', 'e', 'l', 'c', 'o', None, None, None]
+3
+3
+False
+Frame(FrameKind.data,2,2,"'l'")
+
+12
+[(0, 'o'), (0, ' '), (0, 'W'), (0, 'o'), (0, 'r'), (0, 'l'), (0, 'd'), (0, '!'), (35, ' '), (35, 'H'), (35, 'A'), (35, 'H'), (35, 'A')]
+'Wel'
+[EventType.frame_arrival, EventType.timeout]
+['H', 'e', 'l', 'l', None, None, None, None]
+1
+4
+False
+Frame(FrameKind.data,3,2,"'l'")
+
+13
+[(0, 'm'), (0, 'e'), (0, ' '), (40, 't'), (40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hell'
+[EventType.frame_arrival, EventType.timeout]
+['W', 'e', 'l', 'c', 'o', None, None, None]
+2
+4
+False
+Frame(FrameKind.data,3,3,"'c'")
+
+14
+[(0, ' '), (0, 'W'), (0, 'o'), (0, 'r'), (0, 'l'), (0, 'd'), (0, '!'), (35, ' '), (35, 'H'), (35, 'A'), (35, 'H'), (35, 'A')]
+'Welc'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['H', 'e', 'l', 'l', 'o', None, None, None]
+1
+5
+False
+Frame(FrameKind.data,4,3,"'o'")
+
+15
+[(0, 'm'), (0, 'e'), (0, ' '), (40, 't'), (40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello'
+[EventType.frame_arrival, EventType.timeout]
+['W', 'e', 'l', 'c', 'o', None, None, None]
+1
+5
+False
+Frame(FrameKind.data,4,4,"'o'")
+
+16
+[(0, 'W'), (0, 'o'), (0, 'r'), (0, 'l'), (0, 'd'), (0, '!'), (35, ' '), (35, 'H'), (35, 'A'), (35, 'H'), (35, 'A')]
+'Welco'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['H', 'e', 'l', 'l', 'o', ' ', None, None]
+1
+6
+False
+Frame(FrameKind.data,5,4,"' '")
+
+17
+[(0, 'e'), (0, ' '), (40, 't'), (40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello '
+[EventType.frame_arrival, EventType.network_layer_ready]
+['W', 'e', 'l', 'c', 'o', 'm', None, None]
+1
+6
+False
+Frame(FrameKind.data,5,5,"'m'")
+
+18
+[(0, 'o'), (0, 'r'), (0, 'l'), (0, 'd'), (0, '!'), (35, ' '), (35, 'H'), (35, 'A'), (35, 'H'), (35, 'A')]
+'Welcom'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['H', 'e', 'l', 'l', 'o', ' ', 'W', None]
+1
+7
+False
+Frame(FrameKind.data,6,5,"'W'")
+
+19
+[(0, ' '), (40, 't'), (40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello W'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['W', 'e', 'l', 'c', 'o', 'm', 'e', None]
+1
+7
+False
+Frame(FrameKind.data,6,6,"'e'")
+
+20
+[(0, 'r'), (0, 'l'), (0, 'd'), (0, '!'), (35, ' '), (35, 'H'), (35, 'A'), (35, 'H'), (35, 'A')]
+'Welcome'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o']
+1
+0
+False
+Frame(FrameKind.data,7,6,"'o'")
+
+21
+[(40, 't'), (40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello Wo'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['W', 'e', 'l', 'c', 'o', 'm', 'e', ' ']
+1
+0
+False
+Frame(FrameKind.data,7,7,"' '")
+
+22
+[(0, 'l'), (0, 'd'), (0, '!'), (35, ' '), (35, 'H'), (35, 'A'), (35, 'H'), (35, 'A')]
+'Welcome '
+[EventType.frame_arrival, EventType.network_layer_ready]
+['r', 'e', 'l', 'l', 'o', ' ', 'W', 'o']
+1
+1
+False
+Frame(FrameKind.data,0,7,"'r'")
+
+23
+[(40, 't'), (40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello Wor'
+[EventType.frame_arrival]
+['W', 'e', 'l', 'c', 'o', 'm', 'e', ' ']
+0
+0
+False
+Frame(FrameKind.ack,None,0,"None")
+
+24
+[(0, 'd'), (0, '!'), (35, ' '), (35, 'H'), (35, 'A'), (35, 'H'), (35, 'A')]
+'Welcome '
+[EventType.frame_arrival, EventType.network_layer_ready]
+['r', 'l', 'l', 'l', 'o', ' ', 'W', 'o']
+1
+2
+False
+Frame(FrameKind.data,1,7,"'l'")
+
+25
+[(40, 't'), (40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello Worl'
+[EventType.frame_arrival]
+['W', 'e', 'l', 'c', 'o', 'm', 'e', ' ']
+0
+0
+False
+Frame(FrameKind.ack,None,1,"None")
+
+26
+[(0, '!'), (35, ' '), (35, 'H'), (35, 'A'), (35, 'H'), (35, 'A')]
+'Welcome '
+[EventType.frame_arrival, EventType.network_layer_ready]
+['r', 'l', 'd', 'l', 'o', ' ', 'W', 'o']
+1
+3
+False
+Frame(FrameKind.data,2,7,"'d'")
+
+27
+[(40, 't'), (40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello World'
+[EventType.frame_arrival]
+['W', 'e', 'l', 'c', 'o', 'm', 'e', ' ']
+0
+0
+False
+Frame(FrameKind.ack,None,2,"None")
+
+28
+[(35, ' '), (35, 'H'), (35, 'A'), (35, 'H'), (35, 'A')]
+'Welcome '
+[EventType.frame_arrival, EventType.network_layer_ready]
+['r', 'l', 'd', '!', 'o', ' ', 'W', 'o']
+1
+4
+False
+Frame(FrameKind.data,3,7,"'!'")
+
+29
+[(40, 't'), (40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello World!'
+[EventType.frame_arrival]
+['W', 'e', 'l', 'c', 'o', 'm', 'e', ' ']
+0
+0
+False
+Frame(FrameKind.ack,None,3,"None")
+
+30
+[(35, ' '), (35, 'H'), (35, 'A'), (35, 'H'), (35, 'A')]
+'Welcome '
+[EventType.frame_arrival]
+['r', 'l', 'd', '!', 'o', ' ', 'W', 'o']
+0
+4
+False
+None
+
+31
+[(40, 't'), (40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello World!'
+[]
+['W', 'e', 'l', 'c', 'o', 'm', 'e', ' ']
+0
+0
+False
+None
+
+32
+[(35, ' '), (35, 'H'), (35, 'A'), (35, 'H'), (35, 'A')]
+'Welcome '
+[]
+['r', 'l', 'd', '!', 'o', ' ', 'W', 'o']
+0
+4
+False
+None
+
+33
+[(40, 't'), (40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello World!'
+[]
+['W', 'e', 'l', 'c', 'o', 'm', 'e', ' ']
+0
+0
+False
+None
+
+34
+[(35, ' '), (35, 'H'), (35, 'A'), (35, 'H'), (35, 'A')]
+'Welcome '
+[]
+['r', 'l', 'd', '!', 'o', ' ', 'W', 'o']
+0
+4
+False
+None
+
+35
+[(40, 't'), (40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello World!'
+[]
+['W', 'e', 'l', 'c', 'o', 'm', 'e', ' ']
+0
+0
+False
+None
+
+36
+[(35, 'H'), (35, 'A'), (35, 'H'), (35, 'A')]
+'Welcome '
+[EventType.network_layer_ready]
+['r', 'l', 'd', '!', ' ', ' ', 'W', 'o']
+1
+5
+False
+Frame(FrameKind.data,4,7,"' '")
+
+37
+[(40, 't'), (40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello World! '
+[EventType.frame_arrival]
+['W', 'e', 'l', 'c', 'o', 'm', 'e', ' ']
+0
+0
+False
+Frame(FrameKind.ack,None,4,"None")
+
+38
+[(35, 'A'), (35, 'H'), (35, 'A')]
+'Welcome '
+[EventType.frame_arrival, EventType.network_layer_ready]
+['r', 'l', 'd', '!', ' ', 'H', 'W', 'o']
+1
+6
+True
+Frame(FrameKind.err,5,7,"'H'")
+
+39
+[(40, 't'), (40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello World! '
+[EventType.checksum_error]
+['W', 'e', 'l', 'c', 'o', 'm', 'e', ' ']
+0
+0
+False
+None
+
+40
+[(35, 'H'), (35, 'A')]
+'Welcome '
+[EventType.network_layer_ready]
+['r', 'l', 'd', '!', ' ', 'H', 'A', 'o']
+2
+7
+False
+Frame(FrameKind.data,6,7,"'A'")
+
+41
+[(40, 'o'), (40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello World! '
+[EventType.frame_arrival, EventType.network_layer_ready]
+['t', 'e', 'l', 'c', 'o', 'm', 'e', ' ']
+1
+1
+False
+Frame(FrameKind.data,0,4,"'t'")
+
+42
+[(35, 'A')]
+'Welcome t'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['r', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+3
+0
+False
+Frame(FrameKind.data,7,0,"'H'")
+
+43
+[(40, ' '), (40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello World! '
+[EventType.frame_arrival, EventType.network_layer_ready]
+['t', 'o', 'l', 'c', 'o', 'm', 'e', ' ']
+1
+2
+False
+Frame(FrameKind.data,1,4,"'o'")
+
+44
+[(35, 'A')]
+'Welcome to'
+[EventType.frame_arrival, EventType.timeout]
+['r', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+3
+6
+False
+Frame(FrameKind.data,5,1,"'H'")
+
+45
+[(40, 't'), (40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello World! H'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['t', 'o', ' ', 'c', 'o', 'm', 'e', ' ']
+1
+3
+False
+Frame(FrameKind.data,2,5,"' '")
+
+46
+[(35, 'A')]
+'Welcome to '
+[EventType.frame_arrival, EventType.timeout]
+['r', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+2
+7
+False
+Frame(FrameKind.data,6,2,"'A'")
+
+47
+[(40, 'h'), (40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello World! HA'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['t', 'o', ' ', 't', 'o', 'm', 'e', ' ']
+1
+4
+False
+Frame(FrameKind.data,3,6,"'t'")
+
+48
+[(35, 'A')]
+'Welcome to t'
+[EventType.frame_arrival, EventType.timeout]
+['r', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+1
+0
+False
+Frame(FrameKind.data,7,3,"'H'")
+
+49
+[(40, 'e'), (40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello World! HAH'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['t', 'o', ' ', 't', 'h', 'm', 'e', ' ']
+1
+5
+False
+Frame(FrameKind.data,4,7,"'h'")
+
+50
+[]
+'Welcome to th'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+1
+1
+False
+Frame(FrameKind.data,0,4,"'A'")
+
+51
+[(40, ' '), (40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello World! HAHA'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['t', 'o', ' ', 't', 'h', 'e', 'e', ' ']
+1
+6
+False
+Frame(FrameKind.data,5,0,"'e'")
+
+52
+[]
+'Welcome to the'
+[EventType.frame_arrival]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+Frame(FrameKind.ack,None,5,"None")
+
+53
+[(40, 'j'), (40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello World! HAHA'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['t', 'o', ' ', 't', 'h', 'e', ' ', ' ']
+1
+7
+False
+Frame(FrameKind.data,6,0,"' '")
+
+54
+[]
+'Welcome to the '
+[EventType.frame_arrival]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+Frame(FrameKind.ack,None,6,"None")
+
+55
+[(40, 'u'), (40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello World! HAHA'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['t', 'o', ' ', 't', 'h', 'e', ' ', 'j']
+1
+0
+False
+Frame(FrameKind.data,7,0,"'j'")
+
+56
+[]
+'Welcome to the j'
+[EventType.frame_arrival]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+Frame(FrameKind.ack,None,7,"None")
+
+57
+[(40, 'n'), (40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello World! HAHA'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['u', 'o', ' ', 't', 'h', 'e', ' ', 'j']
+1
+1
+False
+Frame(FrameKind.data,0,0,"'u'")
+
+58
+[]
+'Welcome to the ju'
+[EventType.frame_arrival]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+Frame(FrameKind.ack,None,0,"None")
+
+59
+[(40, 'g'), (40, 'l'), (40, 'e'), (40, '.')]
+'Hello World! HAHA'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['u', 'n', ' ', 't', 'h', 'e', ' ', 'j']
+1
+2
+False
+Frame(FrameKind.data,1,0,"'n'")
+
+60
+[]
+'Welcome to the jun'
+[EventType.frame_arrival]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+Frame(FrameKind.ack,None,1,"None")
+
+61
+[(40, 'l'), (40, 'e'), (40, '.')]
+'Hello World! HAHA'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['u', 'n', 'g', 't', 'h', 'e', ' ', 'j']
+1
+3
+False
+Frame(FrameKind.data,2,0,"'g'")
+
+62
+[]
+'Welcome to the jung'
+[EventType.frame_arrival]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+Frame(FrameKind.ack,None,2,"None")
+
+63
+[(40, 'e'), (40, '.')]
+'Hello World! HAHA'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['u', 'n', 'g', 'l', 'h', 'e', ' ', 'j']
+1
+4
+False
+Frame(FrameKind.data,3,0,"'l'")
+
+64
+[]
+'Welcome to the jungl'
+[EventType.frame_arrival]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+Frame(FrameKind.ack,None,3,"None")
+
+65
+[(40, '.')]
+'Hello World! HAHA'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['u', 'n', 'g', 'l', 'e', 'e', ' ', 'j']
+1
+5
+False
+Frame(FrameKind.data,4,0,"'e'")
+
+66
+[]
+'Welcome to the jungle'
+[EventType.frame_arrival]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+Frame(FrameKind.ack,None,4,"None")
+
+67
+[]
+'Hello World! HAHA'
+[EventType.frame_arrival, EventType.network_layer_ready]
+['u', 'n', 'g', 'l', 'e', '.', ' ', 'j']
+1
+6
+True
+Frame(FrameKind.err,5,0,"'.'")
+
+68
+[]
+'Welcome to the jungle'
+[EventType.checksum_error]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+None
+
+69
+[]
+'Hello World! HAHA'
+[]
+['u', 'n', 'g', 'l', 'e', '.', ' ', 'j']
+1
+6
+False
+None
+
+70
+[]
+'Welcome to the jungle'
+[]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+None
+
+71
+[]
+'Hello World! HAHA'
+[]
+['u', 'n', 'g', 'l', 'e', '.', ' ', 'j']
+1
+6
+False
+None
+
+72
+[]
+'Welcome to the jungle'
+[]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+None
+
+73
+[]
+'Hello World! HAHA'
+[EventType.timeout]
+['u', 'n', 'g', 'l', 'e', '.', ' ', 'j']
+1
+6
+False
+Frame(FrameKind.data,5,0,"'.'")
+
+74
+[]
+'Welcome to the jungle.'
+[EventType.frame_arrival]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+Frame(FrameKind.ack,None,5,"None")
+
+75
+[]
+'Hello World! HAHA'
+[EventType.frame_arrival, EventType.timeout]
+['u', 'n', 'g', 'l', 'e', '.', ' ', 'j']
+0
+6
+False
+Frame(FrameKind.data,5,0,"'.'")
+
+76
+[]
+'Welcome to the jungle.'
+[EventType.frame_arrival]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+None
+
+77
+[]
+'Hello World! HAHA'
+[]
+['u', 'n', 'g', 'l', 'e', '.', ' ', 'j']
+0
+6
+False
+None
+
+78
+[]
+'Welcome to the jungle.'
+[]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+None
+
+79
+[]
+'Hello World! HAHA'
+[]
+['u', 'n', 'g', 'l', 'e', '.', ' ', 'j']
+0
+6
+False
+None
+
+80
+[]
+'Welcome to the jungle.'
+[]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+None
+
+81
+[]
+'Hello World! HAHA'
+[]
+['u', 'n', 'g', 'l', 'e', '.', ' ', 'j']
+0
+6
+False
+None
+
+82
+[]
+'Welcome to the jungle.'
+[]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+None
+
+83
+[]
+'Hello World! HAHA'
+[]
+['u', 'n', 'g', 'l', 'e', '.', ' ', 'j']
+0
+6
+False
+None
+
+84
+[]
+'Welcome to the jungle.'
+[]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+None
+
+85
+[]
+'Hello World! HAHA'
+[]
+['u', 'n', 'g', 'l', 'e', '.', ' ', 'j']
+0
+6
+False
+None
+
+86
+[]
+'Welcome to the jungle.'
+[]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+None
+
+87
+[]
+'Hello World! HAHA'
+[]
+['u', 'n', 'g', 'l', 'e', '.', ' ', 'j']
+0
+6
+False
+None
+
+88
+[]
+'Welcome to the jungle.'
+[]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+None
+
+89
+[]
+'Hello World! HAHA'
+[]
+['u', 'n', 'g', 'l', 'e', '.', ' ', 'j']
+0
+6
+False
+None
+
+90
+[]
+'Welcome to the jungle.'
+[]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+None
+
+91
+[]
+'Hello World! HAHA'
+[]
+['u', 'n', 'g', 'l', 'e', '.', ' ', 'j']
+0
+6
+False
+None
+
+92
+[]
+'Welcome to the jungle.'
+[]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+None
+
+93
+[]
+'Hello World! HAHA'
+[]
+['u', 'n', 'g', 'l', 'e', '.', ' ', 'j']
+0
+6
+False
+None
+
+94
+[]
+'Welcome to the jungle.'
+[]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+None
+
+95
+[]
+'Hello World! HAHA'
+[]
+['u', 'n', 'g', 'l', 'e', '.', ' ', 'j']
+0
+6
+False
+None
+
+96
+[]
+'Welcome to the jungle.'
+[]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+None
+
+97
+[]
+'Hello World! HAHA'
+[]
+['u', 'n', 'g', 'l', 'e', '.', ' ', 'j']
+0
+6
+False
+None
+
+98
+[]
+'Welcome to the jungle.'
+[]
+['A', 'l', 'd', '!', ' ', 'H', 'A', 'H']
+0
+1
+False
+None
+
+99
+[]
+'Hello World! HAHA'
+[]
+['u', 'n', 'g', 'l', 'e', '.', ' ', 'j']
+0
+6
+False
+None
+
