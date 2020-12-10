@@ -5,6 +5,7 @@ from testcase import *
 
 MAX_TIME = 100
 
+
 class SimulationReader:
     def __init__(self, datafilename='./data/data.txt'):
         self.file = open(datafilename, 'r')
@@ -55,6 +56,13 @@ class SimulationReader:
         else:
             raise StopIteration
 
+def print_state(state):
+    t, computeri, network_layer_data_to_send, network_layer_data_received, events, buffer, n_buffered, next_frame_to_send, error, wire_fromi = state
+    wire_fromi = ('Frame(kind={:4s}, seq={}, ack={}, info={})'
+                  .format(wire_fromi.kind.name, wire_fromi.seq, wire_fromi.ack, wire_fromi.info)
+                  if wire_fromi is not None else str(None))
+    print('@t={:2d} C{} Sent: {}'
+          .format(t, computeri, wire_fromi))
 
 
 def run_simulation():
@@ -95,16 +103,32 @@ def run_simulation():
             )
             f.write(s)
 
+    return [comp.get_data_received() for comp in computer]
+
 
 if __name__ == '__main__':
-    run_simulation()
+    data_received = run_simulation()
     reader = SimulationReader()
 
-    for timestep in reader:
-        print(timestep)
+    print('C0 Network Layer to Send:')
+    print(network_layer_for_computer[0])
+
+    print('C1 Network Layer to Send:')
+    print(network_layer_for_computer[1])
+
+    print('Errors in Times:')
+    print(error_times)
 
     print()
 
-    print(reader.get_specific_timestep(5))
-    print(reader.get_specific_timestep(7))
+    for timestep in reader:
+        print_state(timestep)
+
+    print()
+
+    print('C0 Network Layer Received:')
+    print(data_received[0])
+
+    print('C1 Network Layer Received:')
+    print(data_received[1])
 
