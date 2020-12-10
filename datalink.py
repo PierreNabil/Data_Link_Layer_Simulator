@@ -125,8 +125,8 @@ class DataLinkLayer:
 		else:
 			self._disable_network_layer()
 
-		if s is not None or self.next_frame_to_send != []:
-			print('@t={:02d}: C{} Sent: {}'.format(t, self.ID, s))
+		# if s is not None or self.next_frame_to_send != []:
+		# 	print('@t={:02d}: C{} Sent: {}'.format(t, self.ID, s))
 		return s
 
 	def get_data_received(self):
