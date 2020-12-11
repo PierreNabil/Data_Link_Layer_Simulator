@@ -12,7 +12,7 @@ class FrameKind(Enum):
 	err  = auto()
 
 	def __str__(self):
-		return self.name
+		return 'FrameKind.' + self.name
 
 
 @unique
@@ -21,6 +21,12 @@ class EventType(Enum):
 	checksum_error = auto()
 	timeout = auto()
 	network_layer_ready = auto()
+
+	def __str__(self):
+		return 'EventType.' + self.name
+
+	def __repr__(self):
+		return 'EventType.' + self.name
 
 
 class Frame:
@@ -31,7 +37,12 @@ class Frame:
 		self.info = info	#list of data
 
 	def __str__(self):
-		return 'Frame(kind=' + str(self.kind) + ',seq=' + str(self.seq) + ',ack=' + str(self.ack) + ',info=' + str(self.info) + ')'
+		if isinstance(self.info, str):
+			info = "'" + self.info + "'"
+		else:
+			info = str(self.info)
+		s = 'Frame(' + str(self.kind) + ',' + str(self.seq) + ',' + str(self.ack) + ',"' + info + '")'
+		return s
 
 
 def between(a, b, c):
